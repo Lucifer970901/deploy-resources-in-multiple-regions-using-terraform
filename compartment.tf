@@ -26,5 +26,5 @@ resource "oci_core_vcn" "test_vcn" {
   provider       = oci.region2
   cidr_block     = var.vcn_cidr_block
   compartment_id = oci_identity_compartment.compartment.id
-  #compartment_id = "${var.compartment_ocid}"
+  
 }
