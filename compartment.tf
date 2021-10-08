@@ -17,14 +17,3 @@ resource "time_sleep" "wait_60_seconds" {
   create_duration = "60s"
 }
 
-# This resource will create (at least) 30 seconds after oci_identity_compartment.comparment
-
-#resource block for oci vcn.
-resource "oci_core_vcn" "test_vcn" {
-  #Required
-  depends_on = [time_sleep.wait_60_seconds]
-  provider       = oci.region2
-  cidr_block     = var.vcn_cidr_block
-  compartment_id = oci_identity_compartment.compartment.id
-  
-}
