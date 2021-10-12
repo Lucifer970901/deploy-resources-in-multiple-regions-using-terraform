@@ -41,7 +41,7 @@ resource "oci_core_volume_attachment" "linux" {
   provider       = oci.region2
   attachment_type = "iscsi"
   compartment_id  = var.compartment_ocid
-  instance_id     = oci_core_instance.linux[count.index]
+  instance_id     = oci_core_instance.linux[count.index].id
   volume_id       = oci_core_volume.linux.id
   use_chap        = true
 }
