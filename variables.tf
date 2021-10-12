@@ -72,14 +72,9 @@ variable "display_name_publicsubnet" {
 
 #variables to create linux instance
 variable "instance_image_ocid" {
-  type = map(string)
-
-  default = {
-    ap-sydney-1  = "ocid1.image.oc1.ap-sydney-1.aaaaaaaao3vineoljixw657cxmbemwasdgirfy6yfgaljqsvy2dq7wzj2l4q"
-    us-ashburn-1 = "ocid1.image.oc1.iad.aaaaaaaahjkmmew2pjrcpylaf6zdddtom6xjnazwptervti35keqd4fdylca"
-    us-phoenix-1 = "ocid1.image.oc1.phx.aaaaaaaav3isrmykdh6r3dwicrdgpmfdv3fb3jydgh4zqpgm6yr5x3somuza"
+  
     ap-mumbai-1  = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaanwfcq3baulkm73kcimzymx7qgfpoja2b56wgwhopjjgrz4om67zq"
-  }
+ 
   # Updated to Oracle Linux 7.8 with all patches as of April 2020.
 }
 
