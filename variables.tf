@@ -73,7 +73,7 @@ variable "display_name_publicsubnet" {
 #variables to create linux instance
 variable "instance_image_ocid" {
   
-    ap-mumbai-1  = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaanwfcq3baulkm73kcimzymx7qgfpoja2b56wgwhopjjgrz4om67zq"
+    default  = "ocid1.image.oc1.ap-mumbai-1.aaaaaaaanwfcq3baulkm73kcimzymx7qgfpoja2b56wgwhopjjgrz4om67zq"
  
   # Updated to Oracle Linux 7.8 with all patches as of April 2020.
 }
