@@ -20,7 +20,7 @@ resource "oci_core_instance" "linux" {
 
   source_details {
     boot_volume_size_in_gbs = var.boot_volume_size_in_gbs
-    source_id               = var.instance_image_ocid[var.region]
+    source_id               = var.instance_image_ocid[var.region2]
     source_type             = "image"
   }
   timeouts {
