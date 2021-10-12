@@ -71,7 +71,7 @@ variable "display_name_publicsubnet" {
 }
 
 #variables to create linux instance
-variable "instance_image_ocid" {
+variable "instance_image_id" {
   type = map(string)
 
   default = {
@@ -84,11 +84,11 @@ variable "instance_image_ocid" {
 }
 
 variable "instance_name" {
-  description = "provide the display name for thelinux instance to be deployed"
+  description = "provide the display name for the linux instance to be deployed"
 }
 
 variable "ssh_authorized_keys" {
-  default = "C:/Users/megn/new.pub"
+  default = "new.pub"
 }
 
 variable "preserve_boot_volume" {
