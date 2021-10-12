@@ -71,7 +71,7 @@ variable "display_name_publicsubnet" {
 }
 
 #variables to create linux instance
-variable "instance_image_id" {
+variable "instance_image_ocid" {
   type = tomap(string)
 
   default = {
