@@ -34,7 +34,8 @@ variable "fingerprint" {
 
 variable "region" {
 }
-
+variable "region2" {
+}
 variable "compartment_ocid" {
 }
 
