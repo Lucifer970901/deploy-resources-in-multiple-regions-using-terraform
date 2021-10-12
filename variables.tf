@@ -72,7 +72,7 @@ variable "display_name_publicsubnet" {
 
 #variables to create linux instance
 variable "instance_image_id" {
-  type = map(string)
+  type = tomap(string)
 
   default = {
     ap-sydney-1  = "ocid1.image.oc1.ap-sydney-1.aaaaaaaao3vineoljixw657cxmbemwasdgirfy6yfgaljqsvy2dq7wzj2l4q"
